@@ -10,14 +10,15 @@ Teleprompter gratuito e responsivo para ler roteiros durante gravações, aprese
 
 ## Capturas de tela
 
-As capturas oficiais serão adicionadas pelo mantenedor. Os arquivos esperados estão organizados abaixo; **nenhuma imagem fictícia ou provisória está sendo exibida como captura real**.
+### Editor e configurações
 
-| Desktop | Mobile |
-| --- | --- |
-| Editor — `docs/screenshots/editor-desktop.png` | Editor — `docs/screenshots/editor-mobile.png` |
-| Leitura — `docs/screenshots/reader-desktop.png` | Leitura — `docs/screenshots/reader-mobile.png` |
+![Interface do editor do Teleprompter Web em desktop](docs/screenshots/editor-desktop.png)
 
-Veja [como adicionar as capturas](docs/screenshots/README.md). Depois que os arquivos forem enviados, esta seção poderá exibi-los diretamente no README.
+### Modo de leitura
+
+![Modo de leitura do Teleprompter Web com texto e guia de foco](docs/screenshots/reader-desktop.png)
+
+As imagens são capturas reais do aplicativo, fornecidas pelo autor. Os arquivos devem ser adicionados à pasta [`docs/screenshots`](docs/screenshots/README.md) com os nomes indicados para aparecerem automaticamente aqui.
 
 ## Funcionalidades
 
@@ -107,7 +108,7 @@ Adjustable auto-scroll (10 speed levels), mirrored text, typography settings, co
 
 ### Screenshots
 
-Four screenshots are planned for `docs/screenshots/`: `editor-desktop.png`, `reader-desktop.png`, `editor-mobile.png` and `reader-mobile.png`. See the [screenshot guide](docs/screenshots/README.md). No screenshots have been uploaded yet.
+Two desktop screenshots are documented above: the editor and the reading mode. See the [screenshot guide](docs/screenshots/README.md) for the exact filenames. Mobile screenshots can be added later.
 
 ### Get started
 
