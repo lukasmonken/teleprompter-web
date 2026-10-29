@@ -1,90 +1,124 @@
-# Teleprompter V2.1
+# Teleprompter Web
 
-Teleprompter gratuito, responsivo e **open source**, criado com HTML, CSS e JavaScript puro. Foi projetado para facilitar a leitura de roteiros em gravações, apresentações e produção de conteúdo, tanto no celular quanto no computador.
+**Versão 2.1.0 · Open Source · Licença MIT**
 
-**Sem instalação, conta, framework ou backend.** Basta abrir o arquivo `index.html` em um navegador moderno.
+Teleprompter gratuito e responsivo para ler roteiros durante gravações, apresentações e produção de conteúdo. Construído com **HTML, CSS e JavaScript puro**, sem necessidade de conta, instalação, framework ou servidor.
+
+**[▶ Abrir Teleprompter online](https://lukasmonken.github.io/teleprompter-web/)** · [Código-fonte](https://github.com/lukasmonken/teleprompter-web) · [Histórico de versões](CHANGELOG.md)
+
+> A interface desta versão está em português. O aplicativo funciona diretamente em navegadores modernos para desktop e celular.
+
+## Capturas de tela
+
+As capturas oficiais serão adicionadas pelo mantenedor. Os arquivos esperados estão organizados abaixo; **nenhuma imagem fictícia ou provisória está sendo exibida como captura real**.
+
+| Desktop | Mobile |
+| --- | --- |
+| Editor — `docs/screenshots/editor-desktop.png` | Editor — `docs/screenshots/editor-mobile.png` |
+| Leitura — `docs/screenshots/reader-desktop.png` | Leitura — `docs/screenshots/reader-mobile.png` |
+
+Veja [como adicionar as capturas](docs/screenshots/README.md). Depois que os arquivos forem enviados, esta seção poderá exibi-los diretamente no README.
 
 ## Funcionalidades
 
-- **Rolagem automática** com 10 níveis de velocidade e ajustes durante a leitura.
-- **Modo espelhado** para uso com acessórios de teleprompter.
-- **Tipografia configurável:** tamanho da fonte, espaçamento, largura e alinhamento.
-- **Contagem regressiva 3–2–1** antes do início.
-- **Guia de foco**, barra de progresso e controles flutuantes.
-- **Gestos no celular:** um toque para pausar/continuar, dois toques para mostrar/ocultar controles e arraste para reposicionar.
-- **Bloqueio de controles** durante a leitura.
-- **Importação e exportação de roteiros `.txt`**.
-- **Salvamento automático** do roteiro, das preferências e da posição no navegador.
-- Suporte a **tela cheia** e à **Screen Wake Lock API**, quando disponíveis no navegador.
+- **Rolagem automática:** 10 níveis de velocidade, ajustáveis antes e durante a leitura.
+- **Modo espelhado:** indicado para uso com acessórios de teleprompter.
+- **Texto configurável:** fonte, espaçamento, largura e alinhamento.
+- **Contagem regressiva 3–2–1** antes de iniciar.
+- **Leitura guiada:** guia de foco central, barra de progresso e controles flutuantes.
+- **Gestos de toque:** um toque para pausar/continuar, dois toques para mostrar/ocultar controles, arraste para reposicionar.
+- **Bloqueio de controles** para evitar mudanças acidentais.
+- **Importação e exportação `.txt`** de roteiros.
+- **Salvamento automático** de texto, preferências e posição de leitura no navegador.
+- **Tela cheia e Screen Wake Lock**, quando suportados pelo navegador.
 
 ## Como usar
 
-1. Abra `index.html` no navegador ou visite a versão hospedada, quando configurada no GitHub Pages.
-2. Digite ou cole um roteiro. Se preferir, clique em **Importar .txt**.
-3. Configure a velocidade de leitura, o tamanho do texto e demais preferências.
-4. Clique em **Iniciar leitura**. Durante a leitura, você pode pausar, ajustar a velocidade ou reposicionar o texto.
+1. Abra a [versão online](https://lukasmonken.github.io/teleprompter-web/) ou o arquivo `index.html`.
+2. Cole ou digite um roteiro — também é possível importar um arquivo `.txt`.
+3. Ajuste velocidade, fonte, largura e outras preferências.
+4. Clique em **Iniciar leitura**. Durante a leitura, pause, altere a velocidade ou arraste para reposicionar o texto.
 
 ### Atalhos de teclado
 
 | Tecla | Ação |
 | --- | --- |
 | `Espaço` | Pausar / continuar |
-| `↑` | Aumentar a velocidade |
-| `↓` | Diminuir a velocidade |
-| `Home` | Voltar ao início do roteiro |
+| `↑` | Aumentar velocidade |
+| `↓` | Diminuir velocidade |
+| `Home` | Voltar ao início |
 | `Esc` | Sair do modo de leitura (quando desbloqueado) |
 | `L` | Bloquear / desbloquear controles |
 
 ## Executar localmente
 
-Não é necessário instalar dependências ou iniciar um servidor. Clone este repositório ou baixe o código-fonte e abra `index.html` diretamente.
+Basta abrir `index.html` em um navegador moderno. Não há dependências para instalar.
 
 ```bash
 git clone https://github.com/lukasmonken/teleprompter-web.git
 cd teleprompter-web
 ```
 
-> O endereço do clone acima funcionará após a criação do repositório público com esse nome.
+Abra o arquivo `index.html`. O projeto também está hospedado no [GitHub Pages](https://lukasmonken.github.io/teleprompter-web/), a partir da branch `main`.
 
-## Publicar no GitHub Pages
+## Privacidade e compatibilidade
 
-Na página do repositório, acesse **Settings → Pages**. Em **Build and deployment**, selecione **Deploy from a branch**; escolha a branch `main`, a pasta `/ (root)` e salve. Depois da publicação, o projeto deverá ficar disponível em:
+O projeto é uma aplicação estática e não utiliza conta ou backend. O roteiro e as preferências ficam no **`localStorage` do navegador**: eles não são sincronizados entre navegadores ou dispositivos. Limpar os dados do site pode apagar o conteúdo salvo; por isso, exporte cópias de segurança em `.txt`.
 
-`https://lukasmonken.github.io/teleprompter-web/`
+As APIs de tela cheia e de manter a tela ativa dependem das permissões e da compatibilidade de cada navegador.
 
-A publicação depende de habilitar o GitHub Pages; o endereço acima não é uma demonstração já ativa.
+## Roadmap — ideias para próximas versões
 
-## Privacidade e armazenamento
+Os itens abaixo são **propostas**, ainda não funcionalidades implementadas:
 
-Este projeto é uma aplicação estática e não possui conta, backend ou chamadas de rede no código fornecido. O conteúdo dos roteiros e as preferências são armazenados com `localStorage` **no navegador e dispositivo em uso**, não em uma conta online. Se você limpar os dados do site ou trocar de navegador/dispositivo, poderá perder o roteiro salvo. Exporte seus roteiros para `.txt` como cópia de segurança.
+- [ ] Gerenciar e alternar entre vários roteiros salvos.
+- [ ] Instalação como Progressive Web App (PWA), com uso offline.
+- [ ] Interface em inglês e seleção de idioma.
+- [ ] Mais opções de acessibilidade e atalhos.
+- [ ] Separar HTML, CSS e JavaScript em arquivos próprios, preservando a simplicidade do projeto.
+- [ ] Testes automatizados e documentação de compatibilidade entre navegadores.
 
-As funções de tela cheia e de manter a tela ativa dependem do suporte e das permissões de cada navegador. Em dispositivos móveis, alguns navegadores podem limitar essas funções.
+Sugestões podem ser discutidas nas [Issues](https://github.com/lukasmonken/teleprompter-web/issues).
 
-## Tecnologia
+## Contribuindo
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Web APIs: `localStorage`, `FileReader`, `requestAnimationFrame`, Fullscreen API e Screen Wake Lock API
+Contribuições, correções e sugestões são bem-vindas. Leia [CONTRIBUTING.md](CONTRIBUTING.md) antes de abrir um pull request.
 
-## Contribuições
+## Versões e licença
 
-Sugestões, issues e pull requests são bem-vindos. Veja [CONTRIBUTING.md](CONTRIBUTING.md) para um guia rápido de contribuições.
+- [Changelog](CHANGELOG.md)
+- [Notas preparadas para a versão v2.1.0](docs/release-notes/v2.1.0.md)
+- [GitHub Releases](https://github.com/lukasmonken/teleprompter-web/releases)
+- [Licença MIT](LICENSE)
 
-## Licença
-
-Distribuído sob a [licença MIT](LICENSE). © 2026 lukasmonken.
+© 2026 lukasmonken.
 
 ---
 
 ## English
 
-**Teleprompter V2.1** is a free, responsive, open-source web teleprompter built with vanilla HTML, CSS and JavaScript. It works directly in a modern browser, with no installation, account, dependencies or backend.
+**Teleprompter Web v2.1.0** is a free, responsive, open-source browser teleprompter built with vanilla HTML, CSS and JavaScript — no account, backend or dependencies required.
 
-**Features:** adjustable auto-scroll speed, mirror mode, font size and line spacing controls, countdown, focus guide, progress bar, touch gestures, script import/export (`.txt`), autosave using browser `localStorage`, optional fullscreen and screen wake lock (depending on browser support).
+**[Launch the live app](https://lukasmonken.github.io/teleprompter-web/)** · [Source code](https://github.com/lukasmonken/teleprompter-web) · [Changelog](CHANGELOG.md)
 
-**Getting started:** open `index.html`, paste or import your script, adjust the settings, and select **Iniciar leitura** (Start reading). This version's interface is in Portuguese.
+### Features
 
-**Privacy:** scripts are stored locally in your browser, not synced to the cloud. Export `.txt` backups to avoid data loss.
+Adjustable auto-scroll (10 speed levels), mirrored text, typography settings, countdown, focus guide, progress bar, floating controls, touch gestures, keyboard shortcuts, `.txt` import/export and browser-local autosave. Optional fullscreen and screen wake lock depend on browser support.
 
-**License:** [MIT](LICENSE). Contributions via GitHub issues and pull requests are welcome.
+### Screenshots
+
+Four screenshots are planned for `docs/screenshots/`: `editor-desktop.png`, `reader-desktop.png`, `editor-mobile.png` and `reader-mobile.png`. See the [screenshot guide](docs/screenshots/README.md). No screenshots have been uploaded yet.
+
+### Get started
+
+Open the [live demo](https://lukasmonken.github.io/teleprompter-web/) or `index.html`, paste or import your script, adjust the settings and click **Iniciar leitura** (Start reading). The current interface language is Portuguese.
+
+### Privacy
+
+Scripts and settings are saved locally in your browser using `localStorage`, not in the cloud. Export `.txt` backups if you want to preserve or transfer them.
+
+### Roadmap and contributions
+
+Potential future improvements include multiple script management, PWA/offline support, English localization, accessibility enhancements and automated testing. These are **ideas, not implemented features**. Contributions via [issues](https://github.com/lukasmonken/teleprompter-web/issues) and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+**License:** [MIT](LICENSE).
