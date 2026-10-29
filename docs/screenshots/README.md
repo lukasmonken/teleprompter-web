@@ -1,23 +1,27 @@
-# Screenshots / Capturas de tela
+# Capturas de tela / Screenshots
 
-Este diretório receberá as imagens oficiais do Teleprompter Web.
+Esta pasta contém as capturas reais do Teleprompter Web exibidas no README principal.
 
-| Arquivo | Conteúdo |
+## Capturas de desktop
+
+| Arquivo | Descrição |
 | --- | --- |
-| `editor-desktop.png` | Editor e configurações em uma tela de computador |
-| `reader-desktop.png` | Modo de leitura em uma tela de computador |
-| `editor-mobile.png` | Editor e configurações em um celular |
-| `reader-mobile.png` | Modo de leitura em um celular |
+| `editor-desktop.png` | Editor, importação/exportação e painel de configurações |
+| `reader-desktop.png` | Modo de leitura com guia central de foco e barra de progresso |
 
-## Como adicionar
+As versões para celular são opcionais e podem ser adicionadas no futuro.
 
-1. Acesse a pasta `docs/screenshots` no GitHub.
-2. Selecione **Add file → Upload files** e envie as imagens com os nomes acima.
-3. Faça o commit na branch `main`.
-4. Atualize o README principal para exibir as imagens na seção **Capturas de tela**.
+## Como enviar as imagens
 
-Use um roteiro fictício ou público nas capturas para não divulgar informações pessoais. Prefira arquivos PNG, recortes limpos e tamanho otimizado para leitura.
+1. Abra a pasta `docs/screenshots` no GitHub.
+2. Clique em **Add file → Upload files**.
+3. Envie os arquivos com os nomes exatos `editor-desktop.png` e `reader-desktop.png`.
+4. Faça commit na branch `main`.
+
+O README principal já referencia esses nomes e exibirá as imagens assim que os arquivos estiverem presentes.
 
 ---
 
-Upload the four screenshots with the exact filenames above. Use a sample script without private information. The root README will display them once the screenshot section is updated.
+## English
+
+This directory contains the real project screenshots. Upload `editor-desktop.png` and `reader-desktop.png` with the exact filenames above through GitHub's **Add file → Upload files** action. The main README will automatically render them once committed.
